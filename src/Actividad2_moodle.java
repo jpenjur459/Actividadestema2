@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class actividad2_moodle {
+public class Actividad2_moodle {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
