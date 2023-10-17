@@ -17,7 +17,7 @@ public class Actividad7_moodle {
         int eu = 10;
         int as = 18;
 
-        if (peso_del_pequete > 5) {
+        if (peso_del_pequete >5) {
             System.out.println("Tu entrega ha sido rechazada");
         }
 

@@ -17,7 +17,7 @@ public class Actividad6_moodle {
         double diez_minutos = ocho_minutos + 0.7;
         double mayor_diez_minutos = diez_minutos + 0.5;
 
-        if (minutos_llamada <= 5){
+        if (minutos_llamada <=5){
             System.out.println("la llamada cuesta "+ cinco_minutos + "euros ");
         } else if (minutos_llamada <= 8) {
             System.out.println("la llamda cuesta "+ ocho_minutos + "euros");
