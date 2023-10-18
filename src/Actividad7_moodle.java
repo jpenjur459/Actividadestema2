@@ -8,8 +8,8 @@ public class Actividad7_moodle {
         System.out.println("inserte el peso del paquete ");
         int peso_del_pequete = entrada.nextInt();
 
-        System.out.println("inserte las iniciales del pais (america del norte amn, europa eu ...)");
-        String pais = entrada.nextLine();
+        System.out.println("inserte el numero del pais (america del norte (1), america central (2) america del sur (3) europa (4) asia (5)");
+        int pais = entrada.nextInt();
 
         int amn = 24;
         int amc = 20;
@@ -19,6 +19,16 @@ public class Actividad7_moodle {
 
         if (peso_del_pequete >5) {
             System.out.println("Tu entrega ha sido rechazada");
+        } else if (pais == 1) {
+            System.out.println("el precio del paquete es: "+ peso_del_pequete * amn);
+        }else if (pais == 2) {
+            System.out.println("el precio del paquete es: "+ peso_del_pequete * amc);
+        }else if (pais == 3) {
+            System.out.println("el precio del paquete es: "+ peso_del_pequete * ams);
+        }else if (pais == 4) {
+            System.out.println("el precio del paquete es: "+ peso_del_pequete * eu);
+        }else if (pais == 5) {
+            System.out.println("el precio del paquete es: "+ peso_del_pequete * as);
         }
 
     }

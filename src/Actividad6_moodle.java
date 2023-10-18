@@ -7,26 +7,33 @@ public class Actividad6_moodle {
 
         System.out.println("inserte los minutos de la llamada ");
         double minutos_llamada = entrada.nextDouble();
-        System.out.println("inserte el dia de la llamada ");
+        System.out.println("inserte el dia de la llamada (correspondiendo a liner 1 martes 2 ...)");
         int dia = entrada.nextInt();
-        System.out.println("inserte el el momento del dia (mañana o tarde) ");
+        System.out.println("inserte el el momento del dia (mañana (1) o tarde (2) ");
         int momento = entrada.nextInt();
 
-        double cinco_minutos = 1;
-        double ocho_minutos = cinco_minutos + 0.8;
-        double diez_minutos = ocho_minutos + 0.7;
-        double mayor_diez_minutos = diez_minutos + 0.5;
+        double coste = 0;
+        ;
 
         if (minutos_llamada <=5){
-            System.out.println("la llamada cuesta "+ cinco_minutos + "euros ");
+            coste = 1;
         } else if (minutos_llamada <= 8) {
-            System.out.println("la llamda cuesta "+ ocho_minutos + "euros");
+            coste = 1 + 0.8;
         }else if (minutos_llamada <= 10) {
-            System.out.println("la llamada cuesta "+ diez_minutos + "euros");
+             coste = 1 + 0.8 + 0.7;
         } else if (minutos_llamada > 10) {
-            System.out.println("la llamada cuesta "+ mayor_diez_minutos + "euros");
+            coste = 1 + 0.8 + 0.7 + 0.5;
+        }
+        if (dia == 7){
+            coste = coste * 0.03;
+        }
+        if (momento == 1){
+            coste = coste * 0.15;
+        }else {
+            coste = coste * 0.1;
         }
 
+        System.out.println("la llamada te cuesta "+ coste + " euros");
     }
 
 
